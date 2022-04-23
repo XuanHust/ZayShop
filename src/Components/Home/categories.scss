@@ -1,0 +1,180 @@
+.categories-container{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    .categories-content{
+        width: 85%;
+        margin: 0 auto;
+        padding: 30px 0;
+        .content-top{
+            text-align: center;
+            padding-top: 10px;
+            width: 50%;
+            margin: 0 auto;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            h2{
+                font-size: 48px;
+                font-weight: 300;
+                color: rgb(80, 79, 79);
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 19px;
+                font-weight: 300;
+            }
+        }
+        .content-bottom{
+            width: 100%;
+            display: flex;
+            .content{
+                width: 33.33%;
+                padding: 0 40px;
+                .content-inner{
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        width: 100%;
+                        border-radius: 50%;
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                        }
+                        img:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                    h2{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 15px;
+                    }
+                    button{
+                        padding: 10px 15px;
+                        border-radius: 10px;
+                        background-color: #59ab6e;
+                        border: 1px solid #ddd;
+                        cursor: pointer;
+                        font-size: 18px;
+                        color: #fff;
+                        transition: all 0.3s ease;
+                    }
+                    button:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .categories-container{
+        .categories-content{
+            .content-top{
+                width: 70%;
+                h2{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            .content-bottom{
+                .content{
+                    .content-inner{
+                        h2{
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+                        button{
+                            padding: 7px 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .categories-container{
+        .categories-content{
+            .content-top{
+                padding-top: 0;
+                width: 90%;
+                margin: 0 auto;
+                line-height: 1.5;
+                h2{
+                    font-size: 43px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+            .content-bottom{
+                .content{
+                    .content-inner{
+                        h2{
+                            font-size: 17px;
+                        }
+                        button{
+                            padding: 5px 7px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .categories-container{
+        .categories-content{
+            width: 90%;
+            padding: 10px 0;
+            .content-top{
+                padding-top: 0;
+                width: 100%;
+                line-height: 1.5;
+                h2{
+                    font-size: 37px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .content-bottom{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 25px;
+                .content{
+                    width: 70%;
+                    padding: 0 40px;
+                    .content-inner{
+                        width: 100%;
+                        text-align: center;
+                        p{
+                            margin-bottom: 0;
+                        }
+                        h2{
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        button{
+                            padding: 5px 10px;
+                            font-size: 15px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

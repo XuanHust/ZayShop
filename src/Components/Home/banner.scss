@@ -1,0 +1,235 @@
+.banner-container{
+    width: 100%;
+    background-color: #efefef;
+    .banner-content{
+        width: 85%;
+        margin: 0 auto;
+        .banner-content1{
+            width: 100%;
+            display: flex !important;
+            align-items: center;
+            padding: 20px 0;
+            .content-des1{
+                width: 50%;
+                padding: 0 20px;
+                line-height: 1.6;
+                h2{
+                    font-size: 48px;
+                    font-weight: 300;
+                    color: #59ab6e;
+                    margin-bottom: 15px;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                h3{
+                    font-size: 30px;
+                    font-weight: 350;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 300;
+                    span{
+                        text-decoration: underline;
+                        color: #59ab6e;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content-img1{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .banner-content2{
+            width: 100%;
+            display: flex !important;
+            align-items: center;
+            .content-des2{
+                width: 50%;
+                padding: 0 20px;
+                line-height: 1.6;
+                h2{
+                    font-size: 48px;
+                    font-weight: 300;
+                    margin-bottom: 15px;
+                }
+                h3{
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 300;
+                    span{
+                        text-decoration: underline;
+                        color: #000;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content-img2{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .slick-dots{
+        bottom: 10px;
+        li{
+            margin-right: 18px;
+            transition: all 0.3s ease;
+            button::before{
+                width: 40px;
+                height: 5px;
+                background-color: #517d5b;
+                content: '';
+                transition: all 0.3s ease;
+            }
+            button:hover::before{
+                background-color: #59ab6e;
+            }
+        }
+        li.slick-active{
+            button::before{
+                background-color: #59ab6e;
+            }
+        }
+    }
+    .slick-prev{
+        left: -50px;
+    }
+    .slick-prev::before{
+        font-size: 50px;
+        color: #59ab6e;
+    }
+    .slick-next{
+        right: -40px;
+    }
+    .slick-next::before{
+        font-size: 50px;
+        line-height: 1;
+        opacity: .75;
+        color: #59ab6e;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    .banner-container{
+        width: 100%;
+        background-color: #efefef;
+        .banner-content{
+            width: 90%;
+            .banner-content1{
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+                .content-des1{
+                    width: 100%;
+                    padding: 0 10px;
+                    line-height: 1.5;
+                    h2{
+                        font-size: 40px;
+                        margin-bottom: 10px;
+                    }
+                    h3{
+                        font-size: 26px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+                .content-img1{
+                    width: 60%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .banner-content2{
+                flex-direction: column;
+                align-items: center;
+                .content-des2{
+                    width: 100%;
+                    padding: 0 10px;
+                    line-height: 1.5;
+                    h2{
+                        font-size: 40px;
+                        margin-bottom: 10px;
+                    }
+                    h3{
+                        font-size: 26px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+                .content-img2{
+                    width: 60%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            bottom: 0;
+        }
+        .slick-prev{
+            display: none !important;
+        }
+        .slick-next{
+            display: none !important;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .banner-container{
+        .banner-content{
+            .banner-content1{
+                padding: 5px 0;
+                .content-des1{
+                    h2{
+                        font-size: 30px;
+                        margin-bottom: 5px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        margin-bottom: 2px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .banner-content2{
+                padding: 5px 0;
+                .content-des2{
+                    h2{
+                        font-size: 30px;
+                        margin-bottom: 5px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        margin-bottom: 2px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

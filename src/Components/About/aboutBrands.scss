@@ -1,0 +1,130 @@
+.aboutBrands-container{
+    width: 100%;
+    background-color: #e9eef5;
+    .aboutBrands-content{
+        width: 85%;
+        margin: 0 auto;
+        padding: 100px 0;
+        .title{
+            text-align: center;
+            width: 45%;
+            margin: 0 auto;
+            line-height: 1.6;
+            margin-bottom: 50px;
+            h2{
+                font-size: 48px;
+                font-weight: 300;
+                color: rgb(95, 93, 93);
+            }
+            p{
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+        .brands{
+            width: 65%;
+            margin: 0 auto;
+            .brand{
+                width: 25%;
+                padding: 0 35px;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                }
+            }
+            .slick-next:before{
+                transition: all 0.3s ease;
+                font-size: 30px;
+            }
+            .slick-next:hover:before{
+                color: #ddd;
+            }
+            .slick-prev:before{
+                transition: all 0.3s ease;
+                font-size: 30px;
+            }
+            .slick-prev:hover:before{
+                color: #ddd;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .aboutBrands-container{
+        .aboutBrands-content{
+            width: 90%;
+            padding: 70px 0;
+            .title{
+                width: 65%;
+                line-height: 1.5;
+                h2{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+            .brands{
+                width: 80%;
+                .brand{
+                    width: 25%;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .aboutBrands-container{
+        .aboutBrands-content{
+            width: 90%;
+            padding-bottom: 70px;
+            padding-top: 30px;
+            .title{
+                width: 80%;
+                line-height: 1.5;
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .brands{
+                width: 90%;
+                margin: 0 auto;
+                .brand{
+                    padding: 0 35px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .aboutBrands-container{
+        .aboutBrands-content{
+            width: 90%;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            .title{
+                width: 100%;
+                line-height: 1.5;
+                margin-bottom: 40px;
+                h2{
+                    font-size: 38px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .brands{
+                width: 100%;
+                .brand{
+                    width: 25%;
+                    padding: 0 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

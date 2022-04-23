@@ -1,0 +1,93 @@
+.shopcontent-container{
+    width: 80%;
+    padding: 0 10px;
+    .shopcontent-content{
+        padding-left: 10px;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            h2{
+                font-size: 28px;
+                font-weight: 300;
+                width: 40%;
+                padding-top: 5px;
+            }
+            select{
+                width: 50%;
+                font-size: 18px;
+                padding: 5px;
+                font-weight: 400;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+        .shop-item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .items{
+                width: 31%;
+            }
+        }
+        .numberPage{
+            width: 100%;
+            .number{
+                display: flex;
+                justify-content: end;
+                text-align: center;
+                p{
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ddd;
+                    line-height: 40px;
+                    border: 1px solid rgb(65, 63, 63);
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                }
+                p:hover{
+                    background-color: #59ab6e;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    .shopcontent-container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .shopcontent-container{
+        width: 100%;
+        .shopcontent-content{
+            .title{
+                h2{
+                    font-size: 21px;
+                    width: 45%;
+                }
+                select{
+                    font-size: 15px;
+                }
+            }
+            .shop-item{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                .items{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

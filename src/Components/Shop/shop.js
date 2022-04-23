@@ -1,0 +1,27 @@
+import './shop.scss'
+import AboutBrands from '../About/aboutBrands';
+import Shopsidebar from './shopsidebar';
+
+import Shopcontent from './shopcontent';
+import { useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Route,
+    NavLink,
+    Routes
+} from "react-router-dom";
+
+const Shop = () => {
+
+    return (
+        <>
+            <div className='shop-container'>
+                <Shopsidebar />
+                <Shopcontent />
+            </div>
+            <AboutBrands />
+        </>
+    )
+}
+
+export default Shop;

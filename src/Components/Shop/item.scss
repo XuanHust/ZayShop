@@ -1,0 +1,104 @@
+.item-container{
+    // width: 31%;
+    width: 100%;
+    .item-content{
+        width: 100%;
+        .item{
+            width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            box-shadow: 5px 5px 7px #ddd;
+            padding-bottom: 20px;
+            .img{
+                position: relative;
+                width: 100%;
+                margin-bottom: 15px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                img{
+                    width: 100%;
+                }
+                ul{
+                    position: absolute;
+                    top: 36%;
+                    left: 46%;
+                    .heart-active{
+                        i{
+                            color: red;
+                        }
+                    }
+                    .shop-active{
+                        i{
+                            color: #000;
+                        }
+                    }
+                    li{
+                        margin-bottom: 10px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #59ab6e;
+                        line-height: 40px;
+                        border-radius: 10px;
+                        transition: all 0.3s ease;
+                    }
+                    li:hover{
+                        background-color: #0fcc3e;
+                    }
+                }
+            }
+            .img:hover{
+                img{
+                    opacity: 0.6;
+                }
+            }
+            h3{
+                font-size: 19px;
+                font-weight: 300;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                cursor: pointer;
+                a{
+                    color: #000;
+                }
+            }
+            .size{
+                font-size: 19px;
+                font-weight: 300;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 5px;
+            }
+            li{
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 5px;
+                i{
+                    font-size: 20px;
+                    color: rgb(242, 242, 25);
+                    padding: 0 1px;
+                }
+                i:last-child{
+                    color: #ddd;
+                }
+            }
+            .price{
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 480px) {
+
+}
