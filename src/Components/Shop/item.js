@@ -7,6 +7,9 @@ import {
     Routes
 } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Item = (props) => {
     const { id, name, price, model } = props
 
@@ -35,6 +38,7 @@ const Item = (props) => {
 
     const handleShop = () => {
         setIsShop(!isShop)
+        toast.success("Đã thêm vào giỏ hàng!")
     }
 
     return (

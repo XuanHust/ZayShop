@@ -13,6 +13,8 @@ import About from '../About/about';
 import Shop from '../Shop/shop';
 import Contact from '../Contact/contact';
 import DetailProduct from '../Shop/detailproduct';
+import Cart from '../Cart/cart';
+import NumberCart from '../Cart/numberCart';
 
 
 const Nav = () => {
@@ -61,8 +63,9 @@ const Nav = () => {
                                     <li onClick={() => handleSearch()}>
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </li>
-                                    <li>
-                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                    <li className='cart'>
+                                        <NavLink to='/cart'><i class="fa-solid fa-cart-arrow-down"></i></NavLink>
+                                        <NumberCart />
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-user"></i>
@@ -102,8 +105,9 @@ const Nav = () => {
                             <li className='first'>
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            <li className='cart'>
+                                <NavLink to='/cart'><i class="fa-solid fa-cart-arrow-down"></i></NavLink>
+                                <NumberCart />
                             </li>
                             <li>
                                 <i class="fa-solid fa-user"></i>
@@ -122,6 +126,8 @@ const Nav = () => {
                 <Route path="/contact" element={<Contact />}>
                 </Route>
                 <Route path="/shop/detailProduct" element={<DetailProduct />}>
+                </Route>
+                <Route path="/cart" element={<Cart />}>
                 </Route>
             </Routes>
         </Router>

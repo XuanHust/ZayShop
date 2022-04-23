@@ -1,5 +1,7 @@
 import './detailproduct.scss'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import shop_1 from "../Images/shop_01.jpg"
 import shop_2 from "../Images/shop_02.jpg"
 import shop_3 from "../Images/shop_03.jpg"
@@ -45,6 +47,10 @@ const DetailProduct = () => {
     const handleNumber = (event) => {
 
         setNumber(event.target.value)
+    }
+
+    const handleAdd = () => {
+        toast.success("Đã thêm vào giỏ hàng!")
     }
 
     const product_single = [
@@ -212,7 +218,9 @@ const DetailProduct = () => {
                             </div>
                             <div className='buy_add'>
                                 <button className='buy' type='button'>Buy</button>
-                                <button className='add' type='button'>Add To Cart</button>
+                                <button className='add' type='button'
+                                    onClick={() => handleAdd()}
+                                >Add To Cart</button>
                             </div>
                         </div>
                     </div>
