@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ZayShop/static/css/main.77cd7299.css",
-    "main.js": "/ZayShop/static/js/main.d23c0426.js",
+    "main.css": "/ZayShop/static/css/main.e4b607a1.css",
+    "main.js": "/ZayShop/static/js/main.15f82b95.js",
     "static/js/787.6cfe7d53.chunk.js": "/ZayShop/static/js/787.6cfe7d53.chunk.js",
     "static/media/fa-solid-900.ttf": "/ZayShop/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/shop_07.jpg": "/ZayShop/static/media/shop_07.87bc0370fff015c2b074.jpg",
@@ -35,9 +35,12 @@
     "static/media/product_single_03.jpg": "/ZayShop/static/media/product_single_03.a2998c1e3a016060baa9.jpg",
     "static/media/fa-regular-400.ttf": "/ZayShop/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
     "static/media/product_single_05.jpg": "/ZayShop/static/media/product_single_05.47105f411ec25cee035f.jpg",
+    "static/media/logo2.JPG": "/ZayShop/static/media/logo2.0d6b993f91330b94a1a3.JPG",
     "static/media/product_single_10.jpg": "/ZayShop/static/media/product_single_10.057bf910f72a6a05c82d.jpg",
+    "static/media/logo.JPG": "/ZayShop/static/media/logo.486f7a7d197ebccb1540.JPG",
     "static/media/brand_01.png": "/ZayShop/static/media/brand_01.bebaf76752f081edf502.png",
     "static/media/about-hero.svg": "/ZayShop/static/media/about-hero.2f5265cb6ce22d2a8b76feabd91952e7.svg",
+    "static/media/logo3.JPG": "/ZayShop/static/media/logo3.94f80bd416d386777da6.JPG",
     "static/media/banner_img_02.jpg": "/ZayShop/static/media/banner_img_02.83323918e6ff6c004255.jpg",
     "static/media/category_img_01.jpg": "/ZayShop/static/media/category_img_01.70154f79846bd754e4e6.jpg",
     "static/media/feature_prod_02.jpg": "/ZayShop/static/media/feature_prod_02.e49e46bde268ee0f8cec.jpg",
@@ -52,12 +55,12 @@
     "static/media/slick.ttf": "/ZayShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ZayShop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ZayShop/index.html",
-    "main.77cd7299.css.map": "/ZayShop/static/css/main.77cd7299.css.map",
-    "main.d23c0426.js.map": "/ZayShop/static/js/main.d23c0426.js.map",
+    "main.e4b607a1.css.map": "/ZayShop/static/css/main.e4b607a1.css.map",
+    "main.15f82b95.js.map": "/ZayShop/static/js/main.15f82b95.js.map",
     "787.6cfe7d53.chunk.js.map": "/ZayShop/static/js/787.6cfe7d53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77cd7299.css",
-    "static/js/main.d23c0426.js"
+    "static/css/main.e4b607a1.css",
+    "static/js/main.15f82b95.js"
   ]
 }
