@@ -7,6 +7,7 @@ import {
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NumberCart from '../Cart/numberCart';
+import Cart from '../Cart/cart';
 
 const Item = (props) => {
     const { id, name, price, model } = props
@@ -81,6 +82,7 @@ const Item = (props) => {
                                                 isCart &&
                                                 <p className='hidden'>
                                                     <NumberCart id={id} name={name} price={price} model={model} />
+                                                    <Cart id={id} name={name} price={price} model={model} />
                                                 </p>
                                             }
                                         </>

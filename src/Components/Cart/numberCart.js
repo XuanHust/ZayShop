@@ -1,10 +1,14 @@
 import './numberCart.scss'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect} from 'react';
 
 const NumberCart = (props) => {
+
     const [numberCart, setNumberCart] = useState(0)
+
     const { id, name, price, model } = props
 
+    
+    // console.log("props is:>>>", props)
 
     return (
         <div className='numberCart-container'>
