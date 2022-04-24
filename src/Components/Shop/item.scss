@@ -98,11 +98,44 @@
     }
 }
 @media only screen and (max-width: 1024px) {
-    
+    .item-container{
+        .item-content{
+            .item{
+                .img{
+                    ul{
+                        top: 36%;
+                        left: 41%;
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px) {
-    
+    .item-container{
+        .item-content{
+            .item{
+                .img{
+                    ul{
+                        top: 30%;
+                        left: 39%;
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 480px) {
-
+    .item-container{
+        .item-content{
+            .item{
+                .img{
+                    ul{
+                        top: 30%;
+                        left:40%;
+                    }
+                }
+            }
+        }
+    }
 }
