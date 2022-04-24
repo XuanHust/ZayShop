@@ -105,7 +105,7 @@ const Nav = () => {
                             <li className='first'>
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </li>
-                            <li className='cart'>
+                            <li className='cart2'>
                                 <NavLink to='/cart'><i class="fa-solid fa-cart-arrow-down"></i></NavLink>
                                 <NumberCart />
                             </li>

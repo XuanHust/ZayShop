@@ -1,9 +1,12 @@
 import './numberCart.scss'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-const NumberCart = () => {
+const NumberCart = (props) => {
     const [numberCart, setNumberCart] = useState(0)
-    return(
+    const { id, name, price, model } = props
+
+
+    return (
         <div className='numberCart-container'>
             <div className='numberCart-content'>
                 <input className='numbercart' type='button' value={numberCart}></input>

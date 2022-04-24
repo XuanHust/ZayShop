@@ -17,6 +17,7 @@
                 transition: all 0.3s ease;
                 img{
                     width: 100%;
+
                 }
                 ul{
                     position: absolute;
@@ -31,6 +32,9 @@
                         i{
                             color: #000;
                         }
+                    }
+                    .hidden{
+                        display: none;                    
                     }
                     li{
                         margin-bottom: 10px;
