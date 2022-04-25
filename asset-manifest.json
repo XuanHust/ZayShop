@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ZayShop/static/css/main.dff947bb.css",
-    "main.js": "/ZayShop/static/js/main.b28561e8.js",
+    "main.css": "/ZayShop/static/css/main.d04577f7.css",
+    "main.js": "/ZayShop/static/js/main.24a396ee.js",
     "static/js/787.6cfe7d53.chunk.js": "/ZayShop/static/js/787.6cfe7d53.chunk.js",
     "static/media/fa-solid-900.ttf": "/ZayShop/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/shop_07.jpg": "/ZayShop/static/media/shop_07.87bc0370fff015c2b074.jpg",
@@ -55,12 +55,12 @@
     "static/media/slick.ttf": "/ZayShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ZayShop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ZayShop/index.html",
-    "main.dff947bb.css.map": "/ZayShop/static/css/main.dff947bb.css.map",
-    "main.b28561e8.js.map": "/ZayShop/static/js/main.b28561e8.js.map",
+    "main.d04577f7.css.map": "/ZayShop/static/css/main.d04577f7.css.map",
+    "main.24a396ee.js.map": "/ZayShop/static/js/main.24a396ee.js.map",
     "787.6cfe7d53.chunk.js.map": "/ZayShop/static/js/787.6cfe7d53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff947bb.css",
-    "static/js/main.b28561e8.js"
+    "static/css/main.d04577f7.css",
+    "static/js/main.24a396ee.js"
   ]
 }
