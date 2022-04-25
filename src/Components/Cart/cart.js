@@ -1,22 +1,16 @@
 import './cart.scss'
 import { useState, useEffect } from 'react'
+import Item from '../Shop/item'
 
 const Cart = (props) => {
 
-    const [listCart, setListCart] = useState([])
-    const { id, name, price, model } = props
+    const { product } = props
 
-    
-    console.log("props is cart:>>>", listCart)
 
-        useEffect(() => {
-            console.log("hello nha!")
-            let object = {id:id, name:name, price:price, model:model}
-            console.log("object", object)
-            setListCart([...listCart, object])
-        },[])
+    console.log("props is cart:>>>", product)
 
-    return(
+
+    return (
         <div className='cart-container'>
             <div className='cart-content'>
                 <div className='cart-top'>
@@ -28,7 +22,7 @@ const Cart = (props) => {
                     </div>
                 </div>
                 <div className='cart-product'>
-                    Empty :(
+                    Empty:(
                 </div>
             </div>
         </div>

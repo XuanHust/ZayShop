@@ -235,10 +235,7 @@ const DetailProduct = () => {
                             listItem.map((item, index) => {
                                 return (
                                     <div className='related-item'>
-                                        <Item id={item.id}
-                                            name={item.name}
-                                            price={item.price}
-                                            model={item.model}
+                                        <Item product={item}
                                         />
                                     </div>
                                 )

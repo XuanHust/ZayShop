@@ -11,13 +11,18 @@ import {
     Routes
 } from "react-router-dom";
 
-const Shop = () => {
+const Shop = (props) => {
+
+
+    const onUpCart2 = (value)=>{
+        props.onUpCart(value)
+    }
 
     return (
         <>
             <div className='shop-container'>
                 <Shopsidebar />
-                <Shopcontent />
+                <Shopcontent onUpCart2={onUpCart2}/>
             </div>
             <AboutBrands />
         </>

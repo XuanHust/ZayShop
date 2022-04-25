@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true)
-    }, 6000)
+    }, 100)
 
   }, []);
 
@@ -36,7 +36,7 @@ function App() {
 
       <ToastContainer
         position="top-center"
-        autoClose={5000}
+        autoClose={500}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

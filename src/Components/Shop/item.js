@@ -1,5 +1,5 @@
 import './item.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
     NavLink,
 } from "react-router-dom";
@@ -10,7 +10,7 @@ import NumberCart from '../Cart/numberCart';
 import Cart from '../Cart/cart';
 
 const Item = (props) => {
-    const { id, name, price, model } = props
+    const { product, numberCart } = props
 
     const [isShow, setIsShown] = useState(false)
 
@@ -21,6 +21,7 @@ const Item = (props) => {
     const [isShop, setIsShop] = useState(true)
 
     const [isCart, setIsCart] = useState(true)
+
 
     const handleMouseEnter = () => {
         setIsShown(true)
@@ -39,6 +40,8 @@ const Item = (props) => {
 
     const handleShop = () => {
         setIsShop(!isShop)
+        let number = numberCart + 1
+        props.onSetNumberCart(number)
         toast.success("Đã thêm vào giỏ hàng!")
         setTimeout(() => {
             setIsCart(false)
@@ -53,7 +56,7 @@ const Item = (props) => {
                         onMouseEnter={() => handleMouseEnter()}
                         onMouseLeave={() => handleMouseLeave()}
                     >
-                        <img src={model} alt={name}></img>
+                        <img src={product.model} alt={product.name}></img>
                         {
                             isShow &&
                             <ul>
@@ -81,8 +84,8 @@ const Item = (props) => {
                                             {
                                                 isCart &&
                                                 <p className='hidden'>
-                                                    <NumberCart id={id} name={name} price={price} model={model} />
-                                                    <Cart id={id} name={name} price={price} model={model} />
+                                                    <NumberCart numberCart={numberCart} />
+                                                    <Cart product={product} />
                                                 </p>
                                             }
                                         </>
@@ -90,7 +93,7 @@ const Item = (props) => {
                             </ul>
                         }
                     </p>
-                    <h3><NavLink to='/shop/detailProduct'>{name}</NavLink></h3>
+                    <h3><NavLink to='/shop/detailProduct'>{product.name}</NavLink></h3>
                     <p className='size'>M/L/X/XL</p>
                     <li>
                         <i class="fa-solid fa-star"></i>
@@ -99,7 +102,7 @@ const Item = (props) => {
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </li>
-                    <p className='price'>$ {price}</p>
+                    <p className='price'>$ {product.price}</p>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@ import shop_11 from "../Images/shop_11.jpg"
 import shop_12 from "../Images/shop_01.jpg"
 import Item from './item';
 
-const Shopcontent = () => {
+const Shopcontent = (props) => {
 
     const [listItem, setListItem] = useState([
         { id: "1", name: 'Oupidatat non_1', price: '250.00', model: shop_1 },
@@ -30,7 +30,12 @@ const Shopcontent = () => {
         { id: "11", name: 'Oupidatat non_11', price: '250.00', model: shop_11 },
         { id: "12", name: 'Oupidatat non_12', price: '250.00', model: shop_12 },
     ])
-
+    const [numberCart, setNumberCart] = useState(0)
+    const onSetNumberCart=(value)=>{
+        console.log({value});
+        setNumberCart(value)
+        props.onUpCart2(value)
+    }
     return (
         <div className='shopcontent-container'>
             <div className='shopcontent-content'>
@@ -49,10 +54,7 @@ const Shopcontent = () => {
                             return (
 
                                 <div className='items'>
-                                    <Item id={item.id}
-                                        name={item.name}
-                                        price={item.price}
-                                        model={item.model}
+                                    <Item product={item} numberCart={numberCart} onSetNumberCart={onSetNumberCart}
                                     />
                                 </div>
 
