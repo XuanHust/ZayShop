@@ -1,13 +1,12 @@
 import './itemCart.scss'
-import { connect } from 'react-redux'
+import { useState } from 'react'
 
 const ItemCart = (props) => {
 
     const { item } = props
-    console.log("hello", props)
 
-    const handleRemove = (item) => {
-        props.removeItemRedux(item)
+    const handleRemove = () => {
+        props.removeitem(props.item)
     }
 
     return (
@@ -27,16 +26,11 @@ const ItemCart = (props) => {
                 </li>
                 <p className='price'>$ {item.price}</p>
                 <button type='button'
-                onClick={(item) => handleRemove(item)}
+                onClick={() => handleRemove()}
                 >Remove</button>
             </div>
         </div>
     )
 }
-const mapDispatchToProps = (dispatch) => {
-    return({
-        removeItemRedux: (itemAdd) => dispatch({type: 'REMOVE_ITEM', payload: itemAdd})
-    })
-}
 
-export default connect(mapDispatchToProps)(ItemCart);
+export default ItemCart;

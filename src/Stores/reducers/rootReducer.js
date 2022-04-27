@@ -39,11 +39,10 @@ const rootReducer = (state = initState, action) => {
 
             state.ItemUpdates = Array.from(new Set(state.ItemUpdates))
 
-            console.log("Cart is:>>", state.ItemUpdates)
-
             return state
         case 'REMOVE_ITEM':
-            
+            let newarray = state.ItemUpdates.filter(item => item.id !== action.payload.id)
+            state.ItemUpdates = [...newarray]
             return state
         default:
             return state;

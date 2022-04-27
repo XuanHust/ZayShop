@@ -5,9 +5,11 @@ import ItemCart from '../Shop/itemCart'
 
 const Cart = (props) => {
 
-    console.log("props is cart:>>>", props.dataRedux)
-
     let cost = 0
+
+    const removeitem = (item) => {
+        props.removeItemRedux(item)
+    }
 
     return (
         <div className='cart-container'>
@@ -33,7 +35,7 @@ const Cart = (props) => {
                         props.dataRedux && props.dataRedux.length > 0 ?
                             props.dataRedux.map((item, index) => {
                                 return (
-                                    <ItemCart item={item}/>
+                                    <ItemCart item={item} removeitem={removeitem}/>
                                 )
                             })
                             :
@@ -53,4 +55,10 @@ const mapStateToProps = (state) => {
     )
 }
 
-export default connect(mapStateToProps)(Cart);
+const mapDispatchToProps = (dispatch) => {
+    return({
+        removeItemRedux: (itemRemove) => dispatch({type: 'REMOVE_ITEM', payload: itemRemove})
+    })
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

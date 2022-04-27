@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 
 const NumberCart = (props) => {
 
-    // console.log("Number cart:", props.dataRedux.length)
-
     return (
         <div className='numberCart-container'>
             <div className='numberCart-content'>
