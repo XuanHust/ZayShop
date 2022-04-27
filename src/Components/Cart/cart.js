@@ -9,7 +9,7 @@ const Cart = (props) => {
 
     const removeitem = (item) => {
         props.removeItemRedux(item)
-    }
+    } 
 
     return (
         <div className='cart-container'>
