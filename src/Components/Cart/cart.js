@@ -1,14 +1,13 @@
 import './cart.scss'
 import { useState, useEffect } from 'react'
-import Item from '../Shop/item'
+import { connect } from 'react-redux'
+import ItemCart from '../Shop/itemCart'
 
 const Cart = (props) => {
 
-    const { product } = props
+    console.log("props is cart:>>>", props.dataRedux)
 
-
-    console.log("props is cart:>>>", product)
-
+    let cost = 0
 
     return (
         <div className='cart-container'>
@@ -17,16 +16,41 @@ const Cart = (props) => {
                     <h2 className='title'>Giỏ Hàng</h2>
                     <div className='infor'>
                         <h2>Tổng Tiền</h2>
-                        <p>0Đ</p>
+                        <p>
+                            {
+                                props.dataRedux && props.dataRedux.length > 0 &&
+                                    props.dataRedux.map((item, index) => {
+                                        cost = cost + item.price
+                                    })
+                            }
+                            $ {cost}
+                        </p>
                         <button type='button'>Mua tất cả</button>
                     </div>
                 </div>
                 <div className='cart-product'>
-                    Empty:(
+                    {
+                        props.dataRedux && props.dataRedux.length > 0 ?
+                            props.dataRedux.map((item, index) => {
+                                return (
+                                    <ItemCart item={item}/>
+                                )
+                            })
+                            :
+                            <div> Empty:( </div>
+                    }
                 </div>
             </div>
         </div>
     )
 }
 
-export default Cart;
+const mapStateToProps = (state) => {
+    return (
+        {
+            dataRedux: state.ItemUpdates
+        }
+    )
+}
+
+export default connect(mapStateToProps)(Cart);

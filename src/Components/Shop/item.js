@@ -6,11 +6,9 @@ import {
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NumberCart from '../Cart/numberCart';
-import Cart from '../Cart/cart';
 
 const Item = (props) => {
-    const { product, numberCart } = props
+    const { product, addItemm } = props
 
     const [isShow, setIsShown] = useState(false)
 
@@ -19,8 +17,6 @@ const Item = (props) => {
     const [isEye, setIsEye] = useState(false)
 
     const [isShop, setIsShop] = useState(true)
-
-    const [isCart, setIsCart] = useState(true)
 
 
     const handleMouseEnter = () => {
@@ -40,12 +36,8 @@ const Item = (props) => {
 
     const handleShop = () => {
         setIsShop(!isShop)
-        let number = numberCart + 1
-        props.onSetNumberCart(number)
         toast.success("Đã thêm vào giỏ hàng!")
-        setTimeout(() => {
-            setIsCart(false)
-        }, 300)
+        addItemm(product)
     }
 
     return (
@@ -81,13 +73,6 @@ const Item = (props) => {
                                         :
                                         <>
                                             <li className='shop-active'><i class="fa-solid fa-cart-plus"></i></li>
-                                            {
-                                                isCart &&
-                                                <p className='hidden'>
-                                                    <NumberCart numberCart={numberCart} />
-                                                    <Cart product={product} />
-                                                </p>
-                                            }
                                         </>
                                 }
                             </ul>

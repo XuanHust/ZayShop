@@ -22,7 +22,7 @@ const Shop = (props) => {
         <>
             <div className='shop-container'>
                 <Shopsidebar />
-                <Shopcontent onUpCart2={onUpCart2}/>
+                <Shopcontent />
             </div>
             <AboutBrands />
         </>

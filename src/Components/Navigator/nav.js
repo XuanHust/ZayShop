@@ -32,10 +32,6 @@ const Nav = () => {
     const handleNavs = () => {
         setNavs(!navs)
     }
-    const [upCart, setUpCart] = useState(0)
-    const onUpCart = (value)=> {
-        setUpCart(value)
-    }
 
     return (
         <Router>
@@ -69,7 +65,7 @@ const Nav = () => {
                                     </li>
                                     <li className='cart'>
                                         <NavLink to='/cart'><i class="fa-solid fa-cart-arrow-down"></i></NavLink>
-                                        <NumberCart NumberCart={upCart}/>
+                                        <NumberCart />
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-user"></i>
@@ -111,7 +107,7 @@ const Nav = () => {
                             </li>
                             <li className='cart2'>
                                 <NavLink to='/cart'><i class="fa-solid fa-cart-arrow-down"></i></NavLink>
-                                <NumberCart NumberCart={upCart}/>
+                                <NumberCart />
                             </li>
                             <li>
                                 <i class="fa-solid fa-user"></i>
@@ -125,7 +121,7 @@ const Nav = () => {
                 </Route>
                 <Route path="/about" element={<About />}>
                 </Route>
-                <Route path="/shop" element={<Shop onUpCart = {onUpCart}/>}>
+                <Route path="/shop" element={<Shop />}>
                 </Route>
                 <Route path="/contact" element={<Contact />}>
                 </Route>
